@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: FlaskFile
+  database:
+    image: mysql:8.0.33
+    environment:
+      - MYSQL_DATABASE=devopsproject
+      - MYSQL_ROOT_PASSWORD=werystrongpassword12
+      - MYSQL_USER=mislav
+      - MYSQL_PASSWORD=hiddengems
+    ports:
+      - 3306:3306
