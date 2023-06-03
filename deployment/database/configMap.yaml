@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: database-config
+  namespace: tp-ns
+data:
+    MYSQL_DATABASE: devopsproject
+    MYSQL_ROOT_PASSWORD: werystrongpassword12
+    MYSQL_USER: mislav
+    MYSQL_PASSWORD: hiddengems

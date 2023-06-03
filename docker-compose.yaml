@@ -5,6 +5,10 @@ services:
     build:
       context: ./
       dockerfile: FlaskFile
+    ports:
+      - 8000:5000
+    depends_on:
+      - database
   database:
     image: mysql:8.0.33
     environment:
