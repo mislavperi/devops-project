@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: tempconverter
   namespace: tp-ns
+  labels:
+    app: tempconverter
 spec:
   ports:
     - name: web
       port: 80
-      targetPort: 5000
+      targetPort: web
   selector:
     app: tempconverter

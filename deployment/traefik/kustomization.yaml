@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-namespace: tempconverter-ns
-patches:
-- path: ./clusterRole.yaml
-- path: ./clusterRoleBinding.yaml
-- path: ./serviceAccount.yaml
-- path: ./deployment.yaml
-- path: ./service.yaml
